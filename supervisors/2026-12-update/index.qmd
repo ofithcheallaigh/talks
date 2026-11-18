@@ -3,9 +3,13 @@ title: "Supervisor Update"
 date: 2026-11-18
 ---
 
-## Since last meeting
+## Summary
 
-- ...
+- Developed a number of KR&R systems for comparison:
+	- Datalog (Rust/Crepe).
+	- SWI-Prolog.
+	- Answer Set Programming.
+- The objective is to see which is the best light-weight approach for the TFLCD framework.
 
 ## Results
 
