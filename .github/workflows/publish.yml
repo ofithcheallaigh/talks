@@ -4,14 +4,17 @@ on:
   workflow_dispatch:
 
 name: Publish
+
+permissions:
   contents: write
 
 jobs:
   publish:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
       - uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+
