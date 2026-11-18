@@ -11,6 +11,26 @@ date: 2026-11-18
 	- Answer Set Programming.
 - The objective is to see which is the best light-weight approach for the TFLCD framework.
 
+## System Equations
+
+$$\text{trusted}(d) \iff \text{trust\_score}(d) > 50$$
+
+$$B(d, r) = \begin{cases} \text{initial\_battery}(d) & r = 1 \\ B(d, r-1) - 1 & r > 1 \text{ and } \text{selected}(d, r-1) \\ B(d, r-1) & r > 1 \text{ and } \lnot\,\text{selected}(d, r-1) \end{cases}$$
+
+$$\text{device\_not\_selected}(d, r) \iff \lnot\,\text{selected}(d, r)$$
+
+$$\text{presistent}(d) \iff \exists r.\; M(d, r) > 35 \land M(d, r{-}1) > 35 \land M(d, r{-}2) > 35$$
+
+$$\text{online}(d) \iff \text{last\_seen}(d) + 1 > C$$
+
+$$\text{offline}(d) \iff \text{capable}(d, \text{train}) \land \lnot\,\text{online}(d)$$
+
+$$\text{recently\_selected}(d) \iff \text{last\_selected\_rnd}(d) + 3 > C$$
+
+$$\text{eligible}(d) \iff \text{capable}(d, \text{train}) \land B(d, C) > 20$$
+
+$$\text{selectable}(d) \iff \text{eligible}(d) \land \text{trusted}(d) \land \lnot\,\text{recently\_selected}(d)$$
+
 ## Results
 
 ![](figures/kb_vs_random.png){width=80%}
