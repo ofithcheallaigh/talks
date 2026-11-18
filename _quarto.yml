@@ -6,7 +6,7 @@ execute:
 
 format:
   revealjs:
-    theme: [default, theme, custom.scss]
+    theme: [default, theme/custom.scss]
     slide-number: true
 
 bibliography: references.bib
