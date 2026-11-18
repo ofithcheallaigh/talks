@@ -1,0 +1,17 @@
+---
+title: "Supervisor Update"
+date: 2026-11-18
+---
+
+## Since last meeting
+
+- ...
+
+## Results
+
+![](figures/kb_vs_random.png){width=80%}
+
+## Next steps
+
+- ...
+

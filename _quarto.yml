@@ -1,0 +1,13 @@
+project:
+  output-dir: _site
+
+execute:
+  freeze: auto
+
+format:
+  revealjs:
+    theme: [default, theme, custom.scss]
+    slide-number: true
+
+bibliography: references.bib
+author: "Seán Ó Fithcheallaigh"
