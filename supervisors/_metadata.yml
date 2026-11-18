@@ -1,4 +1,5 @@
-subtitle: "Supervisors: Prof Chris Nugent, Prof Jun Liu, Dr Ian Cleland"
+# subtitle: "Supervisors: Prof Chris Nugent, Prof Jun Liu, Dr Ian Cleland"
+supervisors: "Supervisors: Prof Chris Nugent, Prof Jun Liu, Dr Ian Cleland"
 
 format:
   revealjs:

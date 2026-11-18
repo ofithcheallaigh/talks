@@ -8,6 +8,8 @@ format:
   revealjs:
     theme: [default, theme/custom.scss]
     slide-number: true
+    template-partials:
+      - theme/title-slide.html
 
 bibliography: references.bib
 author:
