@@ -10,4 +10,7 @@ format:
     slide-number: true
 
 bibliography: references.bib
-author: "Seán Ó Fithcheallaigh"
+author:
+  - name: "Seán Ó Fithcheallaigh"
+    affiliations: "Ulster University"
+
