@@ -41,7 +41,11 @@ $$\text{selectable}(d) \iff \text{eligible}(d) \land \text{trusted}(d) \land \ln
 
 ::: {.eqs}
 
-$$\text{persistent}(d) \iff \exists r.\; M(d, r) > 35 \land M(d, r{-}1) > 35 \land M(d, r{-}2) > 35$$
+$$\begin{aligned}
+\text{persistent}(d) \iff \exists r.\;& M(d, r) > 35 \\
+&\land M(d, r{-}1) > 35 \land M(d, r{-}2) > 35
+\end{aligned}$$
+
 
 $$\text{trusted}(d) \iff \mathrm{trust\_score}(d) > 50$$
 
