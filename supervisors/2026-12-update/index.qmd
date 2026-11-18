@@ -11,6 +11,12 @@ date: 2026-11-18
 	- Answer Set Programming.
 - The objective is to see which is the best light-weight approach for the TFLCD framework.
 
+
+# Transition Slide
+
+
+
+
 ## System Equations
 ### Availability & Selection
 
