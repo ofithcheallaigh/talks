@@ -14,6 +14,8 @@ date: 2026-11-18
 ## System Equations
 ### Availability & Selection
 
+::: {.eqs}
+
 $$\mathrm{device\_not\_selected}(d, r) \iff \lnot\,\text{selected}(d, r)$$
 
 $$\text{online}(d) \iff \mathrm{last\_seen}(d) + 1 > C$$
@@ -26,19 +28,27 @@ $$\text{eligible}(d) \iff \text{capable}(d, \text{train}) \land B(d, C) > 20$$
 
 $$\text{selectable}(d) \iff \text{eligible}(d) \land \text{trusted}(d) \land \lnot\,\mathrm{recently\_selected}(d)$$
 
+:::
+
 ## System Equations
 ### Trust & Persistence
+
+::: {.eqs}
 
 $$\text{persistent}(d) \iff \exists r.\; M(d, r) > 35 \land M(d, r{-}1) > 35 \land M(d, r{-}2) > 35$$
 
 $$\text{trusted}(d) \iff \mathrm{trust\_score}(d) > 50$$
 
+:::
 
 ## System Equations
 ### Battery
 
+::: {.eqs}
+
 $$B(d, r) = \begin{cases} \mathrm{initial\_battery}(d) & r = 1 \\ B(d, r-1) - 1 & r > 1 \text{ and } \text{selected}(d, r-1) \\ B(d, r-1) & r > 1 \text{ and } \lnot\,\text{selected}(d, r-1) \end{cases}$$
 
+:::
 
 ## Results
 
