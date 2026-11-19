@@ -7,9 +7,14 @@ execute:
 format:
   revealjs:
     theme: [default, theme/custom.scss]
-    slide-number: true
     template-partials:
       - theme/title-slide.html
+    controls: true              # on-screen arrows
+    controls-layout: edges      # or: bottom-right
+    progress: true              # progress bar along the bottom (you already have this)
+    slide-number: c/t           # "3 / 12" instead of just "3"
+    hash: true                  # URL updates per slide, so links can point to a slide
+    menu: true                  # slide-list menu, bottom-left (already on by default)
 
 bibliography: references.bib
 author:
