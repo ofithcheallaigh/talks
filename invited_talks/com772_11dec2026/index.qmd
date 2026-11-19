@@ -1,6 +1,7 @@
 ---
-::: {.tiny}
-title: Pushing AI to the Edge - Core Principles, System Bottlenecks, and Novel Approaches in On-Device Federated Learning
-date: 11.12.26
-:::
+title: "Pushing AI to the Edge"
+subtitle: "Core Principles, System Bottlenecks, and Novel Approaches in On-Device Federated Learning"
+date: 2026-12-11
+date-format: "D MMMM YYYY"
 ---
+
